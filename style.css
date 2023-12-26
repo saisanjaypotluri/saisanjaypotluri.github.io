@@ -169,6 +169,11 @@ nav ul li a:hover::after{
     margin-top: 20%;
     text-align: center;
 }
+.projects-list.more a{
+    text-align: center;
+    font-display: italic;
+    background-color: #ff004f;
+}
 .projects-list div:hover{
     background: #04aed4;
     transform: translateY(-10px);
@@ -293,7 +298,7 @@ nav .fa-solid{
         background-color:#04aed4;
         position: fixed;
         top: 0;
-        right: 0px;
+        right: -200px;
         width: 160px;
         height: fit-content;
         padding-top: 45px;
@@ -311,7 +316,7 @@ nav .fa-solid{
     nav ul .fa-solid.fa-angles-right{
         color: #080808;
     }
-    /* @keyframes vibrate {
+    @keyframes vibrate {
         from{
             transform: translateX(0px);
         }
@@ -320,8 +325,9 @@ nav .fa-solid{
         }
     }
     nav .fa-solid.fa-angles-left{
+        color: #04aed4;
         animation: vibrate 1s ease-in-out 2s infinite alternate;
-    } */
+    }
     .header-text{
         margin-top: 70%;
     }
