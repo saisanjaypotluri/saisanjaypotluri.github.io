@@ -166,6 +166,7 @@ nav ul li a:hover::after{
     text-decoration: none;
 }
 .projects-list.more{
+    margin-top: 20%;
     text-align: center;
 }
 .projects-list div:hover{
