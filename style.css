@@ -165,6 +165,9 @@ nav ul li a:hover::after{
     color: #04aed4;
     text-decoration: none;
 }
+.projects-list.more{
+    text-align: center;
+}
 .projects-list div:hover{
     background: #04aed4;
     transform: translateY(-10px);
