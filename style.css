@@ -154,6 +154,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: all 0.5s;
+    display: inline-block;
 }
 .projects-list h2{
     font-size: 30px;
@@ -165,18 +166,26 @@ nav ul li a:hover::after{
     color: #04aed4;
     text-decoration: none;
 }
-.projects-list.more{
-    margin-top: 20%;
-    text-align: center;
+.projects-list p{
+    height: 0;
+    text-align: justify;
+    overflow: hidden;
+    transition: height 0.5s;
+    
 }
-.projects-list.more a{
-    text-align: center;
-    font-display: italic;
-    background-color: #ff004f;
+.projects-list div#more{
+    display: flex;
+    align-items: center;
 }
 .projects-list div:hover{
     background: #04aed4;
     transform: translateY(-10px);
+}
+.projects-list #amazon:hover p{
+    height:fit-content;
+}
+.projects-list #diagnostics:hover p{
+    height:fit-content;
 }
 .projects-list div a:hover{
     background: none;    
