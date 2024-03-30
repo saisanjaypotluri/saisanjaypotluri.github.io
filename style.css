@@ -173,7 +173,7 @@ nav ul li a:hover::after{
     transition: height 0.5s;
     
 }
-.projects-list div#more{
+.projects-list div.more{
     display: flex;
     align-items: center;
 }
@@ -181,10 +181,10 @@ nav ul li a:hover::after{
     background: #04aed4;
     transform: translateY(-10px);
 }
-.projects-list #amazon:hover p{
+.projects-list .amazon:hover p{
     height:fit-content;
 }
-.projects-list #diagnostics:hover p{
+.projects-list .diagnostics:hover p{
     height:fit-content;
 }
 .projects-list div a:hover{
