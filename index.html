@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjay's personal portfolio</title>
+    <title>Sai Sanjay Potluri - Data Analyst & AI Specialist</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/72a4c1acb3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id = "header">
+    <div id="header">
         <div class="container">
             <nav>
-                <p>San<span style="color: #04aed4;">jay</span>.</p>
+                <p>San<span class="highlight">jay</span>.</p>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li> 
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-angles-right" onclick="closemenu()"></i>
@@ -23,8 +22,9 @@
                 <i class="fa-solid fa-angles-left" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Masters in Computer Science Student</p>
-                <h1>Hi, I'm Sai <span>Sanjay</span> Potluri<br> from <br><span style="color:#ffc629;">Kennesaw State University</span></h1>
+                <p>Data Analyst & AI Research Specialist</p>
+                <h1>Hi, I'm Sai <span class="highlight">Sanjay</span> Potluri</h1>
+                <h2>From <span class="uni-highlight">Kennesaw State University</span></h2>
             </div>
         </div>
     </div>
@@ -33,37 +33,48 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/IMG_8098.JPG" alt="A picture of user">
+                    <img src="images/IMG_8098.JPG" alt="Sai Sanjay Potluri">
                 </div>
                 <div class="about-col-2">
-                    <h1 class = "sub-title">About me </h1>
-                    <p class = "about-me">Motivated and detail-oriented Master’s student in Computer Science at Kennesaw State University, seeking a position that leverages my academic background in programming, web development, and data analysis. I aim to contribute to innovative projects while continuously growing my skills in a collaborative, fast-paced environment.</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-me">Data Science and AI Research Expert with advanced proficiency in developing and evaluating Large Language Models (LLMs) and statistical models. Proven track record of designing rigorous evaluation rubrics, generating high-quality synthetic data and code, and improving AI accuracy by over 20%. Specializes in prompt engineering, reward modeling, and translating data science expertise into gradable criteria for AI systems.</p>
                     <div class="tab-titles">
-                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Web development</span><br>Desiging web pages using HTML, CSS and JavaScript</li>
-                            <li><span>Programming Languages</span><br>Worked with various Python, C, C++ and Java for multiple projects throughout my academic expenditure</li>
-                            <li><span>Microsoft Office</span><br>Proficient in various office tools such as Microsoft Word, Excel, PowerPoint, Outlook</li>
-                            <li><span>Databases, systems and Cloud</span><br>Beginner in SQL, CloudSim and AWS while familiar with both Windows and MacOS. </li>
+                            <li><span>Data Analysis & Visualization</span><br>Python (pandas, NumPy), SQL, Tableau, Statistical Analysis, Hypothesis Testing</li>
+                            <li><span>AI/ML & Data Science</span><br>LLM Evaluation & Fine-Tuning, Reward Modeling, Synthetic Data Generation, PyTorch, TensorFlow</li>
+                            <li><span>Programming Languages</span><br>Python, SQL, Java, JavaScript, HTML, CSS, C++, COBOL</li>
+                            <li><span>Tools & Technologies</span><br>Git, Docker, VS Code, JCL, IMS-DB, IMS-DC, RESTful APIs, Agile Methodologies</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Associate Professional Software Engineer <br>DXC Technologies</span><br>Worked on Mainframe Technology using COBOL, IMS-DB, IMS-DC, and also JCL to monitor jobs to find bugs and errors which persists program from running on the mainframe.</li>
-                            <li><span>Data Science Intern <br>TwiLearn Edutech Pvt. Ltd.</span><br>Using python's pandas and NumPy libraries on real world data sets with Tableau to present a case and draw conclusions</li>
-                            <li><span>Cybersecurity Student Intern <br>Cisco Networking Academy</span><br>Simulated a secure and efficient network for the University using cisco packet tracing software</li>
+                            <li><span>Graduate Research Assistant | Kennesaw State University (Aug 2024 – July 2025)</span><br>
+                                - Evaluated AI-generated data analysis from models including Phi-3.5, Mistral, and Gemma for quality, accuracy, and relevance against detailed rubrics<br>
+                                - Conducted statistical analysis and modelling for open-ended research prompts, achieving 86.23% accuracy in mental health diagnostics and an 83.1% F1-score in fake news detection<br>
+                                - Designed prompts and created detailed rubrics for reward modelling and evaluation of LLM outputs<br>
+                                - Produced gold-standard responses, including 2,040 synthetic mental health scenarios with explanatory notes
+                            </li>
+                            <li><span>Associate Professional Software Engineer | DXC Technologies (Feb 2023 – Aug 2023)</span><br>
+                                - Developed and maintained ATM applications using IBM mainframe technologies: COBOL, JCL, IMS-DC, and IMS-DB<br>
+                                - Monitored performance of 100+ jobs and debugged errors, ensuring 99.9% system uptime<br>
+                                - Collaborated with cross-functional teams, improving application efficiency by 25%
+                            </li>
+                            <li><span>Data Science Intern | Twilearn Ed Tech Pvt. Ltd (Dec 2022 - Jan 2023)</span><br>
+                                - Collected, transformed, and analyzed 6+ years of sales data using Python libraries (Pandas, NumPy)<br>
+                                - Created 5 Tableau dashboards to visualize sales trends over a decade, enabling data-driven insights and improving decision-making by 15%<br>
+                                - Compiled 3 key KPIs for profit, units sold, and category-based profits, supporting 5 critical business decisions
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2023 - 2025</span><br>Masters in Computer Science <br>Kennesaw State University <br>CGPA: 3.33 </li>
+                            <li><span>2023 - 2025</span><br>Masters in Computer Science <br>Kennesaw State University <br>CGPA: 3.3 </li>
                             <li><span>2018 - 2022</span><br>Bachelor of Technology <br>Electronics and Communication Engineering <br>Jawaharlal Nehru Technological University <br>CGPA: 7.19 </li>
-                            <li><span>2016 - 2018</span><br>High School <br>Sri Chaitanya Junior College <br>Score: 871 marks out of 1000</li>
-                            <li><span>Secondary School</span><br>Sree Aditya Concept School <br>CGPA: 9.7</li>
                         </ul>
                     </div>
                 </div>
@@ -75,25 +86,65 @@
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="projects-list">
-                <div class="amazon">
-                     <h2>Amazon Sales Data Analysis</h2>
-                     <p>Using Tableau to present all the sales data of amazon over the period of 2010 – 2017 across the world.
-                        Various KPIs for Profit (in USD), Units Sold, Profits by category are included for ease of understanding the data enabling critical business decisions.
-                        </p>
-                     <a target="_blank" rel="noopener noreferrer" href="https://public.tableau.com/views/Project-1AmazonSalesReport/AmazonSalesReport?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"> look at it</a>
+                <div class="project">
+                    <h2>Amazon Sales Data Analysis</h2>
+                    <a target="_blank" rel="noopener noreferrer" href="https://public.tableau.com/views/Project-1AmazonSalesReport/AmazonSalesReport?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Dashboard
+                    </a>
+                    <p class="project-desc">Using Tableau to present all the sales data of amazon over the period of 2010 – 2017 across the world.
+                       Various KPIs for Profit (in USD), Units Sold, Profits by category are included for ease of understanding the data enabling critical business decisions.
+                    </p>
                 </div>
-                <div class="diagnostics">
-                    <h2>Heart Disease Diagnostics </h2>
-                    <p>With the help of NumPy and Pandas python libraries this project provides a detailed case study based on health vitals such as cholesterol, resting beats per second, slope of pulse and various others.
-                        These provide a detailed overlook of data which can be used to find patterns to draw conclusions.
-                        </p>
-                    <a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/drive/1aPqa5I8f-IlsCJMuE0W-x5FB8CXamIrJ#scrollTo=0NTavwx-EoJ4"> Learn more</a>
+                <div class="project">
+                    <h2>Heart Disease Diagnostics</h2>
+                    <a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/drive/1aPqa5I8f-IlsCJMuE0W-x5FB8CXamIrJ#scrollTo=0NTavwx-EoJ4">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                    </a>
+                    <p class="project-desc">Processed and analyzed a dataset of 1,000+ patient records, examining 10 vital health statistics.
+                       Integrated descriptive and inferential statistical tests, including T-tests, ANOVA, and Linear Regression.
+                       Visualized data to highlight trends and correlations, improving pattern recognition efficiency by 40%.
+                    </p>
                 </div>
-                <div class="more">
-                    <h2><a href="#"> Show more projects</a></h2>
+                <div class="project">
+                    <h2>LLM Research & Evaluation</h2>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.aimspress.com/article/doi/10.3934/aci.2025009">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Read Publication
+                    </a>
+                    <p class="project-desc">Research on enhancing mental health analysis through social media with advanced LLM evaluations.
+                       Published in Annals of Computer and Information Systems (AIMS). Achieved 86.23% accuracy in mental health diagnostics
+                       and 83.1% F1-score in fake news detection using advanced statistical modeling.
+                    </p>
+                </div>
+                <div class="project">
+                    <h2>Shopping Cart System</h2>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                    </a>
+                    <p class="project-desc">Designed and implemented a database system managing 500+ car parts across 10 categories.
+                       Scripted SQL queries for data extraction and analysis to support business decision-making.
+                       Automated reports for sales trends and inventory management.
+                    </p>
+                </div>
+                <div class="project">
+                    <h2>Airline Management System</h2>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                    </a>
+                    <p class="project-desc">Engineered a control logic in COBOL to calculate passenger discounts based on various input criteria.
+                       Utilized JCL, IMS-DB, and IMS-DC for database management and transaction processing in a mainframe environment.
+                    </p>
+                </div>
+                <div class="project">
+                    <h2>SAM: A Smart Assistant</h2>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Project
+                    </a>
+                    <p class="project-desc">Built a Python-based virtual assistant with a user-friendly interface for voice command processing.
+                       Incorporated external APIs for features like YouTube playback and Wikipedia information retrieval.
+                       Implemented error handling for robust performance in various usage scenarios.
+                    </p>
                 </div>
             </div>
-            <a href="#" class="btn"> See more</a>
         </div>
     </div>
     <!-- ---------- contact -----------  -->
@@ -101,13 +152,13 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class=" sub-title">Contact me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> : spotlur4@students.kennesaw.edu</p>
-                    <p><i class="fa-solid fa-phone"></i> : +1(470)667-0979</p>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>saisanjaypotluri@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+1(470)667-0979</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/sai-sanjay-potluri/"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/saisanjaypotluri"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://leetcode.com/u/saisanjaypotluri/"> <i class="fa fa-fw fa-code"></i></a>
+                        <a href="https://leetcode.com/u/saisanjaypotluri/"><i class="fa fa-fw fa-code"></i></a>
                     </div>
                     <a href="images/SaiSanjayPotluri_Resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
@@ -123,50 +174,55 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © Sanjay. Made with <a href="#"><i class="fa-solid fa-heart"></i></a></p>
+            <p>Copyright © Sai Sanjay Potluri. Made with <i class="fa-solid fa-heart"></i></p>
         </div>
     </div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
 
-<script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
     
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxKiuQIW0zf6BpDZ47trQf00KMH9CSve4nWzV29qmJx-hbolHrsHI6WkQEB7fbtf4BWhw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent Successfully" 
-            setTimeout(function(){
-            msg.innerHTML = ""},5000)
-            form.reset()
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxKiuQIW0zf6BpDZ47trQf00KMH9CSve4nWzV29qmJx-hbolHrsHI6WkQEB7fbtf4BWhw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully" 
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 </body>
 </html>
