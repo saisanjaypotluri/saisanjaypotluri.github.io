@@ -244,6 +244,103 @@ nav ul li a:hover::after {
     opacity: 1;
     max-height: 200px;
 }
+/* ------ Publications Section ------ */
+#publications {
+    padding: 50px 0;
+}
+
+.publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.publication {
+    background: #262626;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.5s, background 0.5s;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.publication:hover {
+    transform: translateY(-10px);
+    background: #2e2e2e;
+    height: auto;
+    min-height: 120px;
+}
+
+.publication h2 {
+    font-size: 20px;
+    color: #04aed4;
+    margin-bottom: 10px;
+}
+
+.publication-meta {
+    color: #FF9900;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.publication-meta i {
+    margin-right: 8px;
+}
+
+.publication-citation {
+    font-size: 14px;
+    color: #ababab;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.publication-desc {
+    color: #fff;
+    line-height: 1.6;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, max-height 0.5s;
+}
+
+.btn-publication {
+    display: inline-flex;
+    align-items: center;
+    color: #04aed4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-top: 15px;
+}
+
+.btn-publication i {
+    margin-right: 8px;
+}
+
+.btn-publication:hover {
+    color: #00d0ff;
+}
+
+/* HOVER EFFECT - This is the key part */
+.publication:hover .publication-desc {
+    opacity: 1;
+    max-height: 300px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    .publication {
+        height: auto;
+        min-height: 120px;
+    }
+    
+    .publication-desc {
+        opacity: 1;
+        max-height: none;
+    }
+}
 /* ------ Certifications Section ------ */
 #certifications {
     padding: 50px 0;
