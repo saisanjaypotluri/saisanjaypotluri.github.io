@@ -281,8 +281,8 @@ nav ul li a:hover::after {
 
 .publication-meta {
     color: #FF9900;
-    margin-bottom: 15px;
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .publication-meta i {
@@ -305,6 +305,11 @@ nav ul li a:hover::after {
     transition: opacity 0.5s, max-height 0.5s;
 }
 
+.publication:hover .publication-desc {
+    opacity: 1;
+    max-height: 300px;
+}
+
 .btn-publication {
     display: inline-flex;
     align-items: center;
@@ -312,7 +317,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .btn-publication i {
@@ -321,12 +326,6 @@ nav ul li a:hover::after {
 
 .btn-publication:hover {
     color: #00d0ff;
-}
-
-/* HOVER EFFECT - This is the key part */
-.publication:hover .publication-desc {
-    opacity: 1;
-    max-height: 300px;
 }
 
 /* Responsive design */
