@@ -244,75 +244,127 @@ nav ul li a:hover::after {
     opacity: 1;
     max-height: 200px;
 }
-/* Certification section styles */
+/* ------ Certifications Section ------ */
 #certifications {
     padding: 50px 0;
-    background-color: #f5f7fa;
+    background-color: #080808;
+    color: #fff;
 }
 
 .certifications-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
 
 .certification {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    transition: transform 0.3s;
+    background: #262626;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.5s, background 0.5s;
+    position: relative;
 }
 
 .certification:hover {
     transform: translateY(-10px);
+    background: #2e2e2e;
 }
 
 .cert-icon {
-    font-size: 50px;
+    font-size: 40px;
     color: #FF9900; /* AWS orange */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 153, 0, 0.1);
+    border-radius: 50%;
+}
+
+.certification h2 {
+    font-size: 20px;
+    color: #04aed4;
+    margin-bottom: 10px;
 }
 
 .cert-desc {
-    color: #666;
+    color: #ababab;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .cert-details {
     text-align: left;
     margin: 20px 0;
     padding-left: 20px;
+    line-height: 1.6;
+}
+
+.cert-details li {
+    color: #fff;
+    margin-bottom: 8px;
 }
 
 .btn-cert {
-    background-color: #FF9900;
-    color: white;
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 25px;
+    padding: 10px 20px;
     margin-top: 15px;
+    background: #04aed4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.5s, transform 0.5s;
+    font-weight: 500;
 }
 
 .btn-cert:hover {
-    background-color: #e68a00;
+    background: #00d0ff;
+    transform: translateY(-3px);
+    color: #080808;
 }
 
-.cert-highlight {
-    background-color: #FF990022;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: bold;
-    color: #FF9900;
+.btn-cert i {
+    margin-right: 8px;
 }
 
+/* If you want to match the project card hover effect */
+.certification {
+    height: auto;
+    min-height: 150px;
+    overflow: hidden;
+}
+
+/* Optional: Add a subtle border/glow on hover */
+.certification:hover {
+    box-shadow: 0 10px 20px rgba(4, 174, 212, 0.2);
+}
+
+/* Responsive design for certifications */
+@media only screen and (max-width: 600px) {
+    .certification {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .certification h2 {
+        font-size: 18px;
+    }
+    
+    .cert-details {
+        font-size: 14px;
+    }
+    
+    .btn-cert {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
 /* ------ Contact Section ------ */
 #contact {
     padding: 50px 0;
