@@ -280,52 +280,27 @@ nav ul li a:hover::after {
 }
 
 .cert-icon {
-    display: inline-flex;
-    align-items: center;
     color: #FF9900; /* AWS orange */
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-    margin-bottom: 10px;
-    font-size: 24px;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .cert-icon i {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .cert-desc {
-    color: #ababab;
-    font-style: italic;
-    margin-bottom: 15px;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s, max-height 0.5s;
-}
-
-.cert-details {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s, max-height 0.5s;
-    line-height: 1.6;
-    padding-left: 20px;
-    margin: 10px 0;
-}
-
-.cert-details li {
     color: #fff;
-    margin-bottom: 8px;
-    list-style-type: none;
+    line-height: 1.6;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, max-height 0.5s;
 }
 
-.cert-details li:before {
-    content: "•";
-    color: #04aed4;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+.certification:hover .cert-desc {
+    opacity: 1;
+    max-height: 200px;
 }
 
 .btn-cert {
@@ -336,10 +311,6 @@ nav ul li a:hover::after {
     font-weight: 500;
     transition: color 0.3s;
     margin-top: 15px;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s, max-height 0.5s;
 }
 
 .btn-cert i {
@@ -350,14 +321,6 @@ nav ul li a:hover::after {
     color: #00d0ff;
 }
 
-/* Show content on hover */
-.certification:hover .cert-desc,
-.certification:hover .cert-details,
-.certification:hover .btn-cert {
-    opacity: 1;
-    max-height: 200px;
-}
-
 /* Responsive design for certifications */
 @media only screen and (max-width: 600px) {
     .certification {
@@ -365,9 +328,7 @@ nav ul li a:hover::after {
         min-height: 120px;
     }
     
-    .cert-desc,
-    .cert-details,
-    .btn-cert {
+    .cert-desc {
         opacity: 1;
         max-height: none;
     }
