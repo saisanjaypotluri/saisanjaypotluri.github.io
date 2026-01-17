@@ -357,7 +357,7 @@ nav ul li a:hover::after {
     padding: 25px;
     border-radius: 10px;
     transition: transform 0.5s, background 0.5s;
-    height: 80px;
+    height: 100px;
     overflow: hidden;
     position: relative;
 }
